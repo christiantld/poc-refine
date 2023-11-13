@@ -1,0 +1,398 @@
+{
+  "products": [
+    {
+      "id": "prod_1",
+      "name": "Product 1"
+    },
+    {
+      "id": "prod_2",
+      "name": "Product 2"
+    },
+    {
+      "id": "prod_3",
+      "name": "Product 3"
+    },
+    {
+      "id": "prod_4",
+      "name": "Product 4"
+    }
+  ],
+  "distributors": [
+    {
+      "id": "dist_1",
+      "name": "Distribuidora 1"
+    },
+    {
+      "id": "dist_2",
+      "name": "Distribuidora 2"
+    }
+  ],
+  "distributor_users": [
+    {
+      "id": "dist_user_1",
+      "name": "Usuario 1 distribuidora 1",
+      "distributorId": "dist_1"
+    },
+    {
+      "id": "dist_user_2",
+      "name": "Usuario 1 distribuidora 2",
+      "distributorId": "dist_2"
+    },
+    {
+      "id": "dist_user_3",
+      "name": "Usuario 2 distribuidora 1",
+      "distributorId": "dist_1"
+    },
+    {
+      "id": "dist_user_4",
+      "name": "Usuario 2 distribuidora 2",
+      "distributorId": "dist_2"
+    }
+  ],
+  "stores": [
+    {
+      "id": "store_1",
+      "name": "Store 1",
+      "distributorId": "dist_1"
+    },
+    {
+      "id": "store_2",
+      "name": "Store 2",
+      "distributorId": "dist_1"
+    },
+    {
+      "id": "store_3",
+      "name": "Store 3",
+      "distributorId": "dist_2"
+    },
+    {
+      "id": "store_4",
+      "name": "Store 4",
+      "distributorId": "dist_2"
+    }
+  ],
+  "store_users": [
+    {
+      "id": "store_1_user_1",
+      "name": "Store 1 User 1",
+      "storeId": "store_1"
+    },
+    {
+      "id": "store_1_user_2",
+      "name": "Store 1 User 2",
+      "storeId": "store_1"
+    },
+    {
+      "id": "store_1_user_3",
+      "name": "Store 1 User 3",
+      "storeId": "store_1"
+    },
+    {
+      "id": "store_1_user_4",
+      "name": "Store 1 User 4",
+      "storeId": "store_1"
+    },
+    {
+      "id": "store_2_user_1",
+      "name": "Store 2 User 1",
+      "storeId": "store_2"
+    },
+    {
+      "id": "store_2_user_2",
+      "name": "Store 2 User 2",
+      "storeId": "store_2"
+    },
+    {
+      "id": "store_2_user_3",
+      "name": "Store 2 User 3",
+      "storeId": "store_2"
+    },
+    {
+      "id": "store_2_user_4",
+      "name": "Store 2 User 4",
+      "storeId": "store_2"
+    },
+    {
+      "id": "store_3_user_1",
+      "name": "Store 3 User 1",
+      "storeId": "store_3"
+    },
+    {
+      "id": "store_3_user_2",
+      "name": "Store 3 User 2",
+      "storeId": "store_3"
+    },
+    {
+      "id": "store_3_user_3",
+      "name": "Store 3 User 3",
+      "storeId": "store_3"
+    },
+    {
+      "id": "store_3_user_4",
+      "name": "Store 3 User 4",
+      "storeId": "store_3"
+    },
+    {
+      "id": "store_4_user_1",
+      "name": "Store 4 User 1",
+      "storeId": "store_4"
+    },
+    {
+      "id": "store_4_user_2",
+      "name": "Store 4 User 2",
+      "storeId": "store_4"
+    },
+    {
+      "id": "store_4_user_3",
+      "name": "Store 4 User 3",
+      "storeId": "store_4"
+    },
+    {
+      "id": "store_4_user_4",
+      "name": "Store 4 User 4",
+      "storeId": "store_4"
+    }
+  ],
+  "store_sales": [
+    {
+      "id": "store_sale_1",
+      "storeId": "store_1",
+      "store_userId": "store_1_user_1",
+      "value": 100,
+      "date": "2019-01-01",
+      "product": "prod_1"
+    },
+    {
+      "id": "store_sale_2",
+      "storeId": "store_2",
+      "store_userId": "store_2_user_1",
+      "value": 200,
+      "date": "2019-01-02",
+      "product": "prod_2"
+    },
+    {
+      "id": "store_sale_3",
+      "storeId": "store_3",
+      "store_userId": "store_3_user_1",
+      "value": 300,
+      "date": "2019-01-03",
+      "product": "prod_3"
+    },
+    {
+      "id": "store_sale_4",
+      "storeId": "store_4",
+      "store_userId": "store_4_user_1",
+      "value": 400,
+      "date": "2019-01-04",
+      "product": "prod_4"
+    },
+    {
+      "id": "store_sale_5",
+      "storeId": "store_1",
+      "store_userId": "store_1_user_2",
+      "value": 500,
+      "date": "2019-01-05",
+      "product": "prod_1"
+    },
+    {
+      "id": "store_sale_6",
+      "storeId": "store_2",
+      "store_userId": "store_2_user_2",
+      "value": 600,
+      "date": "2019-01-06",
+      "product": "prod_2"
+    },
+    {
+      "id": "store_sale_7",
+      "storeId": "store_3",
+      "store_userId": "store_3_user_2",
+      "value": 700,
+      "date": "2019-01-07",
+      "product": "prod_3"
+    },
+    {
+      "id": "store_sale_8",
+      "storeId": "store_4",
+      "store_userId": "store_4_user_2",
+      "value": 800,
+      "date": "2019-01-08",
+      "product": "prod_4"
+    },
+    {
+      "id": "store_sale_9",
+      "storeId": "store_1",
+      "store_userId": "store_1_user_3",
+      "value": 900,
+      "date": "2019-01-09",
+      "product": "prod_1"
+    },
+    {
+      "id": "store_sale_10",
+      "storeId": "store_2",
+      "store_userId": "store_2_user_3",
+      "value": 1000,
+      "date": "2019-01-10",
+      "product": "prod_2"
+    },
+    {
+      "id": "store_sale_11",
+      "storeId": "store_3",
+      "store_userId": "store_3_user_3",
+      "value": 1100,
+      "date": "2019-01-11",
+      "product": "prod_3"
+    },
+    {
+      "id": "store_sale_12",
+      "storeId": "store_4",
+      "store_userId": "store_4_user_3",
+      "value": 1200,
+      "date": "2019-01-12",
+      "product": "prod_4"
+    },
+    {
+      "id": "store_sale_13",
+      "storeId": "store_1",
+      "store_userId": "store_1_user_4",
+      "value": 1300,
+      "date": "2019-01-13",
+      "product": "prod_1"
+    },
+    {
+      "id": "store_sale_14",
+      "storeId": "store_2",
+      "store_userId": "store_2_user_4",
+      "value": 1400,
+      "date": "2019-01-14",
+      "product": "prod_2"
+    },
+    {
+      "id": "store_sale_15",
+      "storeId": "store_3",
+      "store_userId": "store_3_user_4",
+      "value": 1500,
+      "date": "2019-01-15",
+      "product": "prod_3"
+    },
+    {
+      "id": "store_sale_16",
+      "storeId": "store_4",
+      "store_userId": "store_4_user_4",
+      "value": 1600,
+      "date": "2019-01-16",
+      "product": "prod_4"
+    },
+    {
+      "id": "store_sale_17",
+      "storeId": "store_1",
+      "store_userId": "store_1_user_1",
+      "value": 1700,
+      "date": "2019-01-17",
+      "product": "prod_1"
+    },
+    {
+      "id": "store_sale_18",
+      "storeId": "store_2",
+      "store_userId": "store_2_user_1",
+      "value": 1800,
+      "date": "2019-01-18",
+      "product": "prod_2"
+    },
+    {
+      "id": "store_sale_19",
+      "storeId": "store_3",
+      "store_userId": "store_3_user_1",
+      "value": 1900,
+      "date": "2019-01-19",
+      "product": "prod_3"
+    },
+    {
+      "id": "store_sale_20",
+      "storeId": "store_4",
+      "store_userId": "store_4_user_1",
+      "value": 2000,
+      "date": "2019-01-20",
+      "product": "prod_4"
+    },
+    {
+      "id": "store_sale_21",
+      "storeId": "store_1",
+      "store_userId": "store_1_user_2",
+      "value": 2100,
+      "date": "2019-01-21",
+      "product": "prod_1"
+    },
+    {
+      "id": "store_sale_22",
+      "storeId": "store_2",
+      "store_userId": "store_2_user_2",
+      "value": 2200,
+      "date": "2019-01-22",
+      "product": "prod_2"
+    },
+    {
+      "id": "store_sale_23",
+      "storeId": "store_3",
+      "store_userId": "store_3_user_2",
+      "value": 2300,
+      "date": "2019-01-23",
+      "product": "prod_3"
+    },
+    {
+      "id": "store_sale_24",
+      "storeId": "store_4",
+      "store_userId": "store_4_user_2",
+      "value": 2400,
+      "date": "2019-01-24",
+      "product": "prod_4"
+    },
+    {
+      "id": "store_sale_25",
+      "storeId": "store_1",
+      "store_userId": "store_1_user_3",
+      "value": 2500,
+      "date": "2019-01-25",
+      "product": "prod_1"
+    },
+    {
+      "id": "store_sale_26",
+      "storeId": "store_2",
+      "store_userId": "store_2_user_3",
+      "value": 2600,
+      "date": "2019-01-26",
+      "product": "prod_2"
+    },
+    {
+      "id": "store_sale_27",
+      "storeId": "store_3",
+      "store_userId": "store_3_user_3",
+      "value": 2700,
+      "date": "2019-01-27",
+      "product": "prod_3"
+    },
+    {
+      "id": "store_sale_28",
+      "storeId": "store_4",
+      "store_userId": "store_4_user_3",
+      "value": 2800,
+      "date": "2019-01-28",
+      "product": "prod_4"
+    },
+    {
+      "id": "store_sale_29",
+      "storeId": "store_1",
+      "store_userId": "store_1_user_4",
+      "value": 2900,
+      "date": "2019-01-29",
+      "product": "prod_1"
+    },
+    {
+      "id": "store_sale_30",
+      "storeId": "store_2",
+      "store_userId": "store_2_user_4",
+      "value": 3000,
+      "date": "2019-01-30",
+      "product": "prod_2"
+    }
+  ]
+}

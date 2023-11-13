@@ -7,38 +7,40 @@
     "build": "refine build",
     "start": "refine start",
     "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
-    "refine": "refine"
+    "refine": "refine",
+    "server": "npx json-server --watch db.json --port 3333"
   },
   "dependencies": {
+    "@emotion/react": "^11.8.2",
+    "@emotion/server": "^11.10.0",
+    "@mantine/core": "^5.10.4",
+    "@mantine/form": "^5.10.4",
+    "@mantine/hooks": "^5.10.4",
+    "@mantine/next": "^6.0.1",
+    "@mantine/notifications": "^5.10.4",
     "@refinedev/cli": "^2.7.4",
     "@refinedev/core": "^4.28.2",
     "@refinedev/devtools": "^1.1.6",
-    "@refinedev/nextjs-router": "^5.3.2",
     "@refinedev/inferencer": "^4.3.2",
     "@refinedev/kbar": "^1.1.2",
+    "@refinedev/mantine": "^2.5.0",
+    "@refinedev/nextjs-router": "^5.3.2",
+    "@refinedev/react-table": "^5.1.4",
+    "@refinedev/simple-rest": "^4.0.0",
+    "@tabler/icons": "^1.1.0",
+    "json-server": "^0.17.4",
     "next": "^13.0.6",
     "nookies": "^2.5.2",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "@refinedev/simple-rest": "^4.0.0",
-    "@refinedev/mantine": "^2.5.0",
-    "@refinedev/react-table": "^5.1.4",
-    "@tabler/icons": "^1.1.0",
-    "@mantine/core": "^5.10.4",
-    "@mantine/hooks": "^5.10.4",
-    "@mantine/form": "^5.10.4",
-    "@mantine/notifications": "^5.10.4",
-    "@emotion/react": "^11.8.2",
-    "@mantine/next": "^6.0.1",
-    "@emotion/server": "^11.10.0"
+    "react-dom": "^18.0.0"
   },
   "devDependencies": {
+    "@types/node": "^12.20.11",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
-    "@types/node": "^12.20.11",
     "@typescript-eslint/parser": "5.48.0",
-    "typescript": "^4.7.4",
-    "cross-env": "^7.0.3"
+    "cross-env": "^7.0.3",
+    "typescript": "^4.7.4"
   },
   "refine": {
     "projectId": "P27gkB-5688UE-ATNmCI"

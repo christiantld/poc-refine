@@ -24,8 +24,9 @@ import { useLocalStorage } from "@mantine/hooks";
 import { NotificationsProvider } from "@mantine/notifications";
 import dataProvider from "@refinedev/simple-rest";
 import { authProvider } from "src/authProvider";
+import { resources } from "src/data/resources";
 
-const API_URL = "https://api.fake-rest.refine.dev";
+const API_URL = "http://localhost:3333";
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
   noLayout?: boolean;
@@ -57,7 +58,6 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout): JSX.Element {
     setColorScheme(value || (colorScheme === "dark" ? "light" : "dark"));
   return (
     <>
-      <GitHubBanner />
       <RefineKbarProvider>
         <ColorSchemeProvider
           colorScheme={colorScheme}
@@ -71,34 +71,13 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout): JSX.Element {
           >
             <Global styles={{ body: { WebkitFontSmoothing: "auto" } }} />
             <NotificationsProvider position="top-right">
-              <DevtoolsProvider>
+
                 <Refine
                   routerProvider={routerProvider}
                   dataProvider={dataProvider(API_URL)}
                   notificationProvider={notificationProvider}
                   authProvider={authProvider}
-                  resources={[
-                    {
-                      name: "blog_posts",
-                      list: "/blog-posts",
-                      create: "/blog-posts/create",
-                      edit: "/blog-posts/edit/:id",
-                      show: "/blog-posts/show/:id",
-                      meta: {
-                        canDelete: true,
-                      },
-                    },
-                    {
-                      name: "categories",
-                      list: "/categories",
-                      create: "/categories/create",
-                      edit: "/categories/edit/:id",
-                      show: "/categories/show/:id",
-                      meta: {
-                        canDelete: true,
-                      },
-                    },
-                  ]}
+                  resources={resources}
                   options={{
                     syncWithLocation: true,
                     warnWhenUnsavedChanges: true,
@@ -110,8 +89,7 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout): JSX.Element {
                   <UnsavedChangesNotifier />
                   <DocumentTitleHandler />
                 </Refine>
-                <DevtoolsPanel />
-              </DevtoolsProvider>
+        
             </NotificationsProvider>
           </MantineProvider>
         </ColorSchemeProvider>

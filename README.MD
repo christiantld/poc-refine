@@ -23,6 +23,12 @@ Refine offers lots of out-of-the box functionality for rapid development, withou
     npm run dev
 ```
 
+### Running json server with mocked data
+
+```bash
+    npm run server
+```
+
 ### Building for production.
 
 ```bash
@@ -33,6 +39,17 @@ Refine offers lots of out-of-the box functionality for rapid development, withou
 
 ```bash
     npm run start
+```
+
+## JSON Server endpoints
+
+```bash
+  /products
+  /distributors
+  /distributor_users
+  /stores
+  /store_users
+  /store_sales
 ```
 
 ## Learn More
